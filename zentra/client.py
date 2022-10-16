@@ -27,8 +27,8 @@ class Client:
         self._name: str = name
         self._nonce: str | None = None
         self._connection_id: str | None = None
-        self._ws_url: str = "ws://localhost:5678/ws"
-        self._base_url: str = "http://localhost:5678"
+        self._ws_url: str = "wss://api.zentra.live/ws"
+        self._base_url: str = "https://api.zentra.live"
         self._call_on_message = call_on_message
         self._connection_future: asyncio.Future = asyncio.Future()
 
